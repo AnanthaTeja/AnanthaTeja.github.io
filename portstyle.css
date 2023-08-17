@@ -1,0 +1,350 @@
+.heading {
+  font-size: 60px;
+  text-align: center;
+  color: bisque;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+b {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.connect {
+  width: 10px;
+  height: 20vh;
+  position: absolute;
+  top: 44%;
+  left: 22%;
+  position: fixed;
+  text-align: center;
+}
+.descrip {
+  width: 80%;
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 40px;
+  color: lightgoldenrodyellow;
+}
+@keyframes movee {
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+  /* 25% {
+   transform: rotate(5deg);
+   left: 0px;
+   }*/
+  50% {
+    left: 0px;
+    background-blend-mode: multiply;
+    background-color: #aaa;
+    transition: ease-in-out;
+  }
+  /* 55% {
+   transform: rotate(0deg);
+   left: 500px;
+   }
+   70% {
+   transform: rotate(0deg);
+   left: 500px;
+   }
+   100% {
+   } */
+}
+#firsthead,
+.anim {
+  width: 500px;
+  /* height: 37px; */
+  background: darkgoldenrod;
+  color: #0d0c0c;
+  /* position: relative; */
+  /* font-weight: bold; */
+  /* font-size: 20px; */
+  padding: 10px;
+  animation: movee 1s;
+  border-radius: 5px;
+  animation-iteration-count: infinite;
+}
+body,
+.container,
+.card {
+  background-color: #c93434c9;
+  background-image: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.1) 1%,
+    rgba(0, 0, 0, 10) 100%
+  );
+  border-top: none;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  margin-top: 50px;
+}
+#Menu .form-control {
+  background: rgba(255, 255, 255, 0.3) 50%;
+}
+#Menu a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+}
+#Menu .form-control:hover {
+  background-color: #aaa;
+}
+.tangle {
+  color: #1ec7e6;
+  font-family: "Tangerine", serif;
+  font-size: 44px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+.fab.fa-instagram {
+  color: rgb(205, 5, 205);
+}
+/* Define the CSS transition for the icons */
+.popout a,
+.popout a i {
+  transition: transform 0.3s ease;
+}
+/* Scale up the icon on hover */
+.popout a:hover i,
+.popout a:hover {
+  transform: scale(1.2);
+}
+.fas.fa-envelope {
+  color: rgb(245, 241, 233);
+}
+.profile-image {
+  width: 30%;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  right: 20px;
+  z-index: 2;
+  transform: translateY(2%);
+}
+#Home {
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(9, 59, 43, 0.9),
+      rgba(136, 80, 80, 0.974)
+    ),
+    url(MAIN.jpeg);
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  position: center;
+}
+span {
+  align-content: center;
+  color: cadetblue;
+  text-shadow: #ffffff;
+  display: block;
+}
+#main {
+  align-content: center;
+  color: rgb(212, 49, 49);
+  text-shadow: #ffffff;
+  display: block;
+}
+.content {
+  /* text-align: right; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  padding-right: 20px;
+  padding-top: 20px;
+  animation: fade 2s forwards;
+}
+@keyframes fade {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+/*============  about  +========== */
+#About {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(136, 80, 80, 0.974), rgb(9, 156, 96, 0.6));
+}
+/* Hide radio buttons by default */
+input[type="radio"] {
+  display: ruby-text;
+}
+/* Custom styling for radio buttons */
+.custom-radio {
+  width: 150px;
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+  /* padding: 5px 10px; */
+  border-bottom: 2px solid #ed0707;
+  border-radius: 5px;
+  /* color: purple; */
+  background-color: #7b2c2c;
+}
+/* Change style when radio button is checked */
+input:checked .btn.custom-radio {
+  background-color: #68d216;
+  color: #100d10;
+}
+/* Hide all data elements by default */
+#dataContainer > div {
+  display: none;
+}
+/* Display the target data element when the corresponding radio button is checked */
+#button1:checked ~ #dataContainer #data1,
+#button2:checked ~ #dataContainer #data2,
+#button3:checked ~ #dataContainer #data3 {
+  display: block;
+  color: cadetblue;
+  font-size: large;
+}
+#projects {
+  background: linear-gradient(rgb(9, 156, 96, 0.6), rgba(41, 102, 207, 0.543));
+}
+
+#scrollUpIcon {
+  position: fixed;
+  bottom: 30px;
+  left: 45px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #aaa;
+  border-radius: 50%;
+  size: 10px;
+}
+#scrollUpIcon a {
+  color: rgb(26, 172, 77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* +========== Project ==========+ */
+/*=============== WORK ===============*/
+.portfolio {
+  .portfolio__container {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: transparent;
+  }
+}
+.portfolio__item {
+  margin-top: 10px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 50vh;
+}
+.portfolio__item::after,
+.portfolio__data {
+  position: absolute;
+  transition: all 0.8s cubic-bezier(0.05, 0.1, 0.2, 1);
+}
+
+.portfolio__img {
+  opacity: 0.5;
+  vertical-align: middle;
+  transition: all 1s cubic-bezier(0.05, 0.2, 0.1, 2);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio__item::after {
+  content: "";
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgb(160, 127, 213));
+  opacity: 0;
+}
+.portfolio__data {
+  inset-inline: 2rem;
+  bottom: 1.25rem;
+  text-align: center;
+  z-index: 10;
+}
+.portfolio__subtitle,
+.portfolio__description {
+  color: hsl(0, 0%, 100%);
+  opacity: 0.7;
+}
+.portfolio__subtitle {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  text-shadow: 2px 2px 7px black;
+}
+
+.portfolio__title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-shadow: 2px 2px 6px black;
+}
+.portfolio__description {
+  font-weight: 400;
+  display: none;
+}
+
+.project__link {
+  color: hsl(0, 0%, 100%);
+}
+
+/* Work hover */
+
+.portfolio__item:hover::after {
+  opacity: 1;
+}
+
+.portfolio__item:hover .portfolio__img {
+  transform: scale(1.1);
+}
+
+.portfolio__item:hover .portfolio__description {
+  display: block;
+}
+
+.portfolio__item:hover .portfolio__data {
+  transform: translateY(-2rem);
+}
+
+.Morep {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+}
+.Morep a {
+  text-decoration: none;
+  color: #0d0c0c;
+  font-weight: 400;
+}
+.form-control {
+  background: rgba(255, 255, 255, 0.3) 50%;
+}
+.form-control:hover {
+  background-color: #aaa;
+}
+#rights {
+  color: rgb(26, 172, 77);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#rights a {
+  color: #aaa;
+}
